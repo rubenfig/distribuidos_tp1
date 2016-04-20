@@ -25,7 +25,7 @@ def enviarC(identificador):
 		UDP_IP = "localhost"
 		UDP_PORT = 31337
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-		s.sendto(mensaje, (UDP_IP,UDP_PORT))
+		s.sendto(mensaje.encode('utf-8'), (UDP_IP,UDP_PORT))
 		time.sleep(1)
 
 def main():

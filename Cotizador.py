@@ -15,8 +15,8 @@ while True:
 	#Precio base de cotización 
 	recibido = sc.recv(1024)
 	if recibido == "close": break
-	print str(addr[0]) + " dice: ", recibido #Se imprime la solicitud recivida
-	sc.send(str(precio)) #Envíamos las cotizaciones del día
+	print str(addr[0]) + " dice: ", recibido.decode('utf-8') #Se imprime la solicitud recivida
+	sc.send(str(precio).encode('utf-8')) #Envíamos las cotizaciones del día
 
 #Cerramos las instancias de socket cliente y servidor
 sc.close()

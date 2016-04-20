@@ -23,7 +23,7 @@ def enviarS(identificador):
 		mensaje = json.dumps({"id":id, "posX":coord_x, "posY":coord_y, "imagen":encoded, "codigo_cultivo":cod, "departamento":dep, "distrito":dis})
 		#Se envía por un socket UDP
 
-		s.sendto(mensaje, (UDP_IP,UDP_PORT))
+		s.sendto(mensaje.encode('utf-8'), (UDP_IP,UDP_PORT))
 		time.sleep(1)
 
 def main():

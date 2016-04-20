@@ -29,7 +29,7 @@ def enviarT(identificador):
 		UDP_IP = "localhost"
 		UDP_PORT = 11337
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-		s.sendto(mensaje, (UDP_IP,UDP_PORT))
+		s.sendto(mensaje.encode('utf-8'), (UDP_IP,UDP_PORT))
 		time.sleep(1)
 
 #Definimos la cantidad de hilos que se van a ejecutar para enviar los mensajes de manera concurrente

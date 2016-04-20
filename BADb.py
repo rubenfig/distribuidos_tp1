@@ -47,13 +47,14 @@ def recibir(i):
 		TCP_PORT = 6969
 		BUFFER_SIZE = 1024
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		while int(input("Ingrese un caracter si desea recibir cotizacion: ")):
-			MENSAJE = "SOJA"
-			s.connect((TCP_IP, TCP_PORT))
-			s.send(MENSAJE.encode('utf-8'))
-			data = s.recv(BUFFER_SIZE)
-			time.sleep(1)
-			print ("received data:", data.decode('UTF-8'))
+		s.connect((TCP_IP, TCP_PORT))
+		x=input("Ingrese un caracter si desea recibir cotizacion: ")
+		mensaje = "SOJA"
+		s.connect((TCP_IP, TCP_PORT))
+		s.send(mensaje.encode('utf-8'))
+		data = s.recv(BUFFER_SIZE)
+		time.sleep(1)
+		print ("received data:", data.decode('UTF-8'))
 		s.close()
 
 for i in range(4):
