@@ -1,62 +1,104 @@
-﻿import socket
+import socket
 import threading
 import json
 import time
 import dataset
 db = dataset.connect('sqlite:///BADB.db')
 log = open ("log.txt","a")
+IP="localhost"
 
-def recibir(i):
-	if i != 0:
-		UDP_IP = "127.0.0.1"
-		if i == 1:
-			UDP_PORT = 11337
-		if i == 2:
-			UDP_PORT = 21337
-		if i == 3:
-			UDP_PORT = 31337
+print "Base de datos"
 
-		sock = socket.socket(socket.AF_INET, # Internet
-						 socket.SOCK_DGRAM) # UDP
-		sock.bind((UDP_IP, UDP_PORT))
+def tractor():
+        sock = socket.socket(socket.AF_INET, # Internet
+					 socket.SOCK_DGRAM) # UDP
+	sock.bind((IP, 11337))
+	while True:
+                data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
+                parsed_json= json.loads(data.decode('UTF-8'))
+                log = open ("log.txt","a")
+                log.write("Recibido de tractor "+str(parsed_json['id'])+"\n")
+                table = db['tractor']
+                table.insert(dict(tractor_id = parsed_json['id'], coord_x = parsed_json['posX'], coord_y = parsed_json ['posY'], altura = parsed_json ['altura'], humedad = parsed_json['humedad'], peso = parsed_json['peso'], temperatura = parsed_json['temperatura'] ))
+                log.close()
 
-		while True:
-			data, addr = sock.recvfrom(100000000) # buffer size is 1024 bytes
-			parsed_json= json.loads(data.decode('UTF-8'))
-			log = open ("log.txt","a")
-			if i == 1:
-				log.write("Recibido de tractor "+str(parsed_json['id'])+"\n")
-				table = db['tractor']
-				table.insert(dict(tractor_id = parsed_json['id'], coord_x = parsed_json['posX'], coord_y = parsed_json ['posY'], altura = parsed_json ['altura'], humedad = parsed_json['humedad'], peso = parsed_json['peso'], temperatura = parsed_json['temperatura'] ))
-				
-			if i == 2:
-				log.write("Recibido de satelite "+str(parsed_json['id'])+"\n")
-				table = db['satelite']
-				table.insert(dict(satelite_id = parsed_json['id'], coord_x = parsed_json['posX'], coord_y = parsed_json ['posY'], imagen = parsed_json['imagen'], cultivo_id = parsed_json ['codigo_cultivo'], departamento = parsed_json['departamento'], distrito = parsed_json['distrito']))
+def satelite():
+        sock = socket.socket(socket.AF_INET, # Internet
+					 socket.SOCK_DGRAM) # UDP
+	sock.bind((IP, 21337))
+	while True:
+                data, addr = sock.recvfrom(100000000) # buffer size is 100000000 bytes
+                parsed_json= json.loads(data.decode('UTF-8'))
+                log = open ("log.txt","a")
+                log.write("Recibido de satelite "+str(parsed_json['id'])+"\n")
+                table = db['satelite']
+                table.insert(dict(satelite_id = parsed_json['id'], coord_x = parsed_json['posX'], coord_y = parsed_json ['posY'], imagen = parsed_json['imagen'], cultivo_id = parsed_json ['codigo_cultivo'], departamento = parsed_json['departamento'], distrito = parsed_json['distrito']))
+                log.close()
 
-			if i == 3:
-				log.write("Recibido de sensor "+str(parsed_json['id'])+"\n")
-				table = db['sensor']
-				table.insert(dict(sensor_id = parsed_json['id'], zona = parsed_json['zona'], departamento = parsed_json['departamento'], distrito = parsed_json['distrito'], humedad = parsed_json['humedad'], viento = parsed_json['temperatura']))
-			log.close()
-			
-			
-	else:
-		time.sleep(10)
-		TCP_IP = '127.0.0.1'
-		TCP_PORT = 6969
-		BUFFER_SIZE = 1024
-		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((TCP_IP, TCP_PORT))
-		x=input("Ingrese un caracter si desea recibir cotizacion: ")
-		mensaje = "SOJA"
-		s.connect((TCP_IP, TCP_PORT))
-		s.send(mensaje.encode('utf-8'))
-		data = s.recv(BUFFER_SIZE)
-		time.sleep(1)
-		print ("received data:", data.decode('UTF-8'))
-		s.close()
+def sensor():
+	sock = socket.socket(socket.AF_INET, # Internet
+					 socket.SOCK_DGRAM) # UDP
+	sock.bind((IP, 31337))
+	while True:
+		data, addr = sock.recvfrom(100000000) # buffer size is 1024 bytes
+		parsed_json= json.loads(data.decode('UTF-8'))
+		log = open ("log.txt","a")
+		log.write("Recibido de sensor "+str(parsed_json['id'])+"\n")
+		table = db['sensor']
+		table.insert(dict(sensor_id = parsed_json['id'], zona = parsed_json['zona'], departamento = parsed_json['departamento'], distrito = parsed_json['distrito'], humedad = parsed_json['humedad'], viento = parsed_json['temperatura']))
+		log.close()
 
-for i in range(4):
-    t = threading.Thread(target=recibir, args=(i,))
-    t.start()
+def cotizar():
+        time.sleep(5)
+	BUFFER_SIZE = 1024
+	while True:
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                mensaje = "SOJA"
+                s.connect((IP, 6969))
+                s.send(mensaje.encode('utf-8'))
+                data = s.recv(BUFFER_SIZE)
+                print ("Cotizacion recibida:", data.decode('UTF-8'))
+                time.sleep(5)
+                s.close()
+
+def analizer():
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.bind((IP, 4444))
+        s.listen(1)
+	BUFFER_SIZE = 1024
+	
+	while True:
+                sc, addr = s.accept()
+                recibido = sc.recv(1024)
+                print str(addr[0]) + " dice: ", recibido.decode('utf-8') #Se imprime la solicitud recibida
+                parsed_json= json.loads(recibido.decode('UTF-8'))
+                if parsed_json['data'] == "1":
+                        respuesta = "clima" #hay que hacer el query y convertir a json
+                        sc.send(respuesta.encode("utf-8"))
+                if parsed_json['data'] == "2":
+                        respuesta = "tractor" #hay que hacer el query y convertir a json
+                        sc.send(respuesta.encode("utf-8"))
+                if parsed_json['data'] == "3":
+                        respuesta = "satelite" #hay que hacer el query y convertir a json
+                        sc.send(respuesta.encode("utf-8"))
+                if parsed_json['data'] == "4":
+                        respuesta = "cotizador" #hay que hacer el query y convertir a json
+                        sc.send(respuesta.encode("utf-8"))
+                print ("se envio:", respuesta.decode('UTF-8'))
+                sc.close()
+        s.close()
+
+t = threading.Thread(target=tractor, args=())
+t.start()
+
+t = threading.Thread(target=satelite, args=())
+t.start()
+
+t = threading.Thread(target=sensor, args=())
+t.start()
+
+t = threading.Thread(target=cotizar, args=())
+t.start()
+
+t = threading.Thread(target=analizer, args=())
+t.start()

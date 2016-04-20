@@ -5,6 +5,8 @@ import time
 import random
 import threading
 
+
+
 #Se calculan las variables y se utiliza json para representar los datos
 def enviarC(identificador):
 	id = identificador
@@ -29,6 +31,7 @@ def enviarC(identificador):
 		time.sleep(1)
 
 def main():
+        print "Generador de datos climaticos"
 	x = int(input("Ingrese la cantidad de Sensores de clima: "))
 	for i in range(x):
 		t = threading.Thread(target=enviarC, args=(i,))

@@ -27,6 +27,7 @@ def enviarS(identificador):
 		time.sleep(1)
 
 def main():
+        print "Generador de datos satelitales"
 	x = int(input("Ingrese la cantidad de Satelites: "))
 	for i in range(x):
 		t = threading.Thread(target=enviarS, args=(i,))

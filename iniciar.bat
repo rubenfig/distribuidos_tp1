@@ -1,3 +1,5 @@
+@ECHO OFF
+
 START python Clima.py
 
 START python Cotizador.py

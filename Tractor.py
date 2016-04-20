@@ -34,6 +34,7 @@ def enviarT(identificador):
 
 #Definimos la cantidad de hilos que se van a ejecutar para enviar los mensajes de manera concurrente
 def main():
+        print "Generador de datos de tractores"
 	x = int(input("Ingrese la cantidad de tractores: "))
 	for i in range(x):
 		t = threading.Thread(target=enviarT, args=(i,))
