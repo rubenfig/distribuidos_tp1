@@ -86,13 +86,14 @@ def analizer():
 		if parsed_json['data'] == "1":
 			result = db.query("select * from sensor where id = (select MAX(id) from sensor where sensor_id = " + str(elegido) + ")")
 			for row in result:
-				respuesta = json.dumps({"timestamp": row['tiempo'], "id": row['sensor_id'], "humedad": row['humedad'], "viento": row['viento'], "temperatura": row['temperatura'],
+				respuesta = json.dumps({"tiempo": row['tiempo'], "id": row['sensor_id'], "humedad": row['humedad'],
+										"viento": row['viento'], "temperatura": row['temperatura'],
 									  "departamento": row['departamento'], "distrito": row['distrito'], "zona": row['zona']})
 			sc.send(respuesta)
 		if parsed_json['data'] == "2":
 			result = db.query("select * from tractor where id = (select MAX(id) from tractor where tractor_id = " + str(elegido) + ")")
 			for row in result:
-				respuesta = json.dumps({"timestamp":row['tiempo'], "id": row['tractor_id'], "posX": row['coord_x'],
+				respuesta = json.dumps({"tiempo":row['tiempo'], "id": row['tractor_id'], "posX": row['coord_x'],
 										"posY": row['coord_y'], "altura": row['altura'], "humedad": row['humedad'],
 										"peso": row['peso'], "temperatura":row ['temperatura']})
 			sc.send(respuesta)
