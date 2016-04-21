@@ -1,3 +1,4 @@
 log.txt
 BADB.db
-.idea/*
+.idea\
+prueba.py

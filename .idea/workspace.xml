@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ddbce5e5-6639-4984-8918-53eaf11576f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/distribuidos_tp1.iml" afterPath="$PROJECT_DIR$/.idea/distribuidos_tp1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BADb.py" afterPath="$PROJECT_DIR$/BADb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Clima.py" afterPath="$PROJECT_DIR$/Clima.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tractor.py" afterPath="$PROJECT_DIR$/Tractor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prueba.py" afterPath="$PROJECT_DIR$/prueba.py" />
     </list>
     <ignored path="distribuidos_tp1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +21,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/distribuidos_tp1$prueba.coverage" NAME="prueba Coverage Results" MODIFIED="1461267814973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/distribuidos_tp1$prueba.coverage" NAME="prueba Coverage Results" MODIFIED="1461271737507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/distribuidos_tp1$BADb.coverage" NAME="BADb Coverage Results" MODIFIED="1461271372862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -34,13 +36,10 @@
       <file leaf-file-name="prueba.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prueba.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
               <folding>
-                <marker date="1461267833439" expanded="true" signature="165:244" placeholder="select * fro... satelite" />
-                <marker date="1461267833439" expanded="true" signature="165:245" placeholder="select * fro... satelite" />
-                <marker date="1461267833439" expanded="true" signature="165:262" placeholder="select * fro... satelite" />
-                <marker date="1461267833439" expanded="true" signature="200:244" placeholder="select MAX(i... satelite" />
+                <marker date="1461271737428" expanded="true" signature="170:177" placeholder="select * fro... satelite" />
               </folding>
             </state>
           </provider>
@@ -49,16 +48,19 @@
       <file leaf-file-name="BADb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BADb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+            <state relative-caret-position="74">
+              <caret line="103" column="106" selection-start-line="99" selection-start-column="12" selection-end-line="103" selection-end-column="106" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-                <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-                <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-                <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-                <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-                <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+                <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+                <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+                <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+                <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+                <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+                <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+                <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+                <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+                <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
               </folding>
             </state>
           </provider>
@@ -80,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/Clima.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
-              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
               </folding>
@@ -91,8 +93,8 @@
       <file leaf-file-name="Satelite.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Satelite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="145" />
+            <state relative-caret-position="329">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
               </folding>
@@ -104,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/Tractor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="149" />
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
               </folding>
@@ -142,12 +144,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tractor.py" />
-        <option value="$PROJECT_DIR$/Clima.py" />
         <option value="$PROJECT_DIR$/Cotizador.py" />
         <option value="$PROJECT_DIR$/Satelite.py" />
-        <option value="$PROJECT_DIR$/prueba.py" />
+        <option value="$PROJECT_DIR$/Tractor.py" />
+        <option value="$PROJECT_DIR$/Clima.py" />
         <option value="$PROJECT_DIR$/BADb.py" />
+        <option value="$PROJECT_DIR$/prueba.py" />
       </list>
     </option>
   </component>
@@ -243,6 +245,24 @@
       <module name="distribuidos_tp1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prueba.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BADb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="distribuidos_tp1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BADb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -455,12 +475,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.prueba" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BADb" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.prueba" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BADb" />
       </list>
     </recent_temporary>
   </component>
@@ -529,12 +551,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+            <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+            <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
           </folding>
         </state>
       </provider>
@@ -593,12 +618,15 @@
           <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+            <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+            <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
           </folding>
         </state>
       </provider>
@@ -657,12 +685,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+            <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+            <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
           </folding>
         </state>
       </provider>
@@ -721,12 +752,15 @@
           <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+            <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+            <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
           </folding>
         </state>
       </provider>
@@ -785,12 +819,15 @@
           <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+            <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+            <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
           </folding>
         </state>
       </provider>
@@ -861,23 +898,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prueba.py">
+    <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1461267833439" expanded="true" signature="165:244" placeholder="select * fro... satelite" />
-            <marker date="1461267833439" expanded="true" signature="165:245" placeholder="select * fro... satelite" />
-            <marker date="1461267833439" expanded="true" signature="165:262" placeholder="select * fro... satelite" />
-            <marker date="1461267833439" expanded="true" signature="200:244" placeholder="select MAX(i... satelite" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Satelite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="145" />
+        <state relative-caret-position="234">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
           </folding>
@@ -887,35 +911,48 @@
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tractor.py">
+    <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="149" />
+        <state relative-caret-position="329">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prueba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
+          <folding>
+            <marker date="1461271737428" expanded="true" signature="170:177" placeholder="select * fro... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+        <state relative-caret-position="74">
+          <caret line="103" column="106" selection-start-line="99" selection-start-column="12" selection-end-line="103" selection-end-column="106" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461269018592" expanded="true" signature="3210:3309" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3243:3288" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3691:3793" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="3725:3772" placeholder="select MAX(i... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4166:4271" placeholder="select * fro... satelite" />
-            <marker date="1461269018592" expanded="true" signature="4201:4250" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3228:3327" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3261:3306" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3695:3797" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="3729:3776" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4156:4261" placeholder="select * fro... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4191:4240" placeholder="select MAX(i... satelite" />
+            <marker date="1461271277886" expanded="true" signature="4615:4646" placeholder="select preci... sate" />
+            <marker date="1461271277886" expanded="true" signature="4615:4689" placeholder="select preci... soja" />
+            <marker date="1461271277886" expanded="true" signature="4657:4677" placeholder="select MAX(i... soja" />
           </folding>
         </state>
       </provider>
