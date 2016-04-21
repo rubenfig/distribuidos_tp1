@@ -9,6 +9,20 @@ public class Tractor {
 	public double peso;
 	public double temperatura;
 	
+	public void printTractor()
+	{
+		System.out.println("\t\tTractor");
+		System.out.println("ID tractor: "+this.tractor_id);
+		System.out.println("Coord_x: "+this.coord_x);
+		System.out.println("Coord_y: "+this.coord_y);
+		System.out.println("Humedad: "+this.humedad);
+		System.out.println("Altura: "+this.altura);
+		System.out.println("Peso: "+this.peso);
+		System.out.println("Temperatura: "+this.temperatura
+	}
+	
+	
+	
 	public Tractor()
 	{
 	}

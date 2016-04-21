@@ -47,8 +47,26 @@ public class Cliente {
         System.out.println("3 Satelite");
         System.out.println("4 Cotizador");
         
+        
+        	
+        
         String entrada= on.next();
-        String fromUser="{\"data\":\""+entrada+"\"}";;
+        String opcion;
+        if(entrada=="4")
+        {
+        	System.out.println("elija una opcion");
+        	System.out.println("tomate");
+        	System.out.println("soja");
+        	System.out.println("locote");
+        	opcion= on.next();
+        	
+        else {
+        	System.out.println("ingrese ID");
+        	opcion= on.next();
+        }
+        	
+        
+        String fromUser="{\"data\":\""+entrada+"\";\"opcion\":\""+opcion+"\"}";
         
         
     
@@ -69,35 +87,36 @@ public class Cliente {
                 else
                     C.setClima_id(-1);
                 
-                if (properties.getProperty("hum")!=null)
-                    C.setHumedad(Integer.parseInt( properties.getProperty("hum")));
+                if (properties.getProperty("humedad")!=null)
+                    C.setHumedad(Integer.parseInt( properties.getProperty("humedad")));
                 else
                    C.setHumedad(-1);
                 	
-                if (properties.getProperty("vie")!=null)
-                    C.setViento(Integer.parseInt( properties.getProperty("vie")));
+                if (properties.getProperty("viento")!=null)
+                    C.setViento(Integer.parseInt( properties.getProperty("viento")));
                 else
                    C.setViento(-1);
                 
-                if (properties.getProperty("tem")!=null)
-                    C.setDepartamento(Integer.parseInt( properties.getProperty("tem")));
+                if (properties.getProperty("temperatura")!=null)
+                    C.setDepartamento(Integer.parseInt( properties.getProperty("temperatura")));
                 else
                    C.setDepartamento(-1);
                 
-                if (properties.getProperty("dis")!=null)
-                    C.setDistrito(Integer.parseInt( properties.getProperty("dis")));
+                if (properties.getProperty("distrito")!=null)
+                    C.setDistrito(Integer.parseInt( properties.getProperty("distrito")));
                 else
                    C.setDistrito(-1);
               
-                if (properties.getProperty("dep")!=null)
-                    C.setDepartamento(Integer.parseInt( properties.getProperty("dep")));
+                if (properties.getProperty("departemento")!=null)
+                    C.setDepartamento(Integer.parseInt( properties.getProperty("departemento")));
                 else
                    C.setDepartamento(-1);
                             
-                if (properties.getProperty("zon")!=null)
-                    C.setZona(Integer.parseInt( properties.getProperty("zon")));
+                if (properties.getProperty("zona")!=null)
+                    C.setZona(Integer.parseInt( properties.getProperty("zona")));
                 else
                    C.setZona(-1);
+                C.printClima();
             }
             else if(entrada=="2" && fromServerjson != null)
             {
@@ -108,35 +127,37 @@ public class Cliente {
                 else
                     T.setTractor_id(-1);
                 
-                if (properties.getProperty("coord_x")!=null)
-                    T.setCoord_x(Integer.parseInt( properties.getProperty("coord_x")));
+                if (properties.getProperty("posX")!=null)
+                    T.setCoord_x(Integer.parseInt( properties.getProperty("posX")));
                 else
                     T.setCoord_x(-1);
                 
-                if (properties.getProperty("coord_y")!=null)
-                    T.setCoord_y(Integer.parseInt( properties.getProperty("coord_y")));
+                if (properties.getProperty("posY")!=null)
+                    T.setCoord_y(Integer.parseInt( properties.getProperty("posY")));
                 else
                     T.setCoord_y(-1);
                 
-                if (properties.getProperty("alt")!=null)
-                    T.setAltura(Integer.parseInt( properties.getProperty("alt")));
+                if (properties.getProperty("altura")!=null)
+                    T.setAltura(Integer.parseInt( properties.getProperty("altura")));
                 else
                     T.setAltura(-1);
                 
-                if (properties.getProperty("hum")!=null)
-                    T.setHumedad(Integer.parseInt( properties.getProperty("hum")));
+                if (properties.getProperty("humedad")!=null)
+                    T.setHumedad(Integer.parseInt( properties.getProperty("humedad")));
                 else
                     T.setHumedad(-1);
                 
-                if (properties.getProperty("pes")!=null)
-                    T.setPeso(Integer.parseInt( properties.getProperty("pes")));
+                if (properties.getProperty("peso")!=null)
+                    T.setPeso(Integer.parseInt( properties.getProperty("peso")));
                 else
                     T.setPeso(-1);
                 
-                if (properties.getProperty("tem")!=null)
-                    T.setTemperatura(Integer.parseInt( properties.getProperty("tem")));
+                if (properties.getProperty("temperatura")!=null)
+                    T.setTemperatura(Integer.parseInt( properties.getProperty("temperatura")));
                 else
                     T.setTemperatura(-1);
+                
+                T.printTracto();
             }
             else if(entrada=="3" && fromServerjson != null)
             {
@@ -147,35 +168,39 @@ public class Cliente {
                 else
                     S.setSatelite_id(-1);
                 
-                if (properties.getProperty("coord_x")!=null)
-                    S.setCoord_x(Integer.parseInt( properties.getProperty("coord_x")));
+                if (properties.getProperty("posX")!=null)
+                    S.setCoord_x(Integer.parseInt( properties.getProperty("posX")));
                 else
                 	S.setCoord_x(-1);
                 
-                if (properties.getProperty("coord_y")!=null)
-                    S.setCoord_y(Integer.parseInt( properties.getProperty("coord_y")));
+                if (properties.getProperty("posY")!=null)
+                    S.setCoord_y(Integer.parseInt( properties.getProperty("posY")));
                 else
                     S.setCoord_y(-1);
                 
-                if (properties.getProperty("dis")!=null)
-                    S.setDistrito(Integer.parseInt( properties.getProperty("dis")));
+                if (properties.getProperty("distrito")!=null)
+                    S.setDistrito(Integer.parseInt( properties.getProperty("distrito")));
                 else
                    S.setDistrito(-1);
                 
-                if (properties.getProperty("dep")!=null)
-                   S.setDepartamento(Integer.parseInt( properties.getProperty("dep")));
+                if (properties.getProperty("departamento")!=null)
+                   S.setDepartamento(Integer.parseInt( properties.getProperty("departemento")));
                 else
                    S.setDepartamento(-1);
-             
+                S.printSatelite();
+                
             }
             else if(entrada=="3" && fromServerjson != null)
             {
                 Properties properties = gson.fromJson(fromServerjson, Properties.class);
                 Cotizador Coti= new Cotizador();
                 if (properties.getProperty("precio")!=null)
-                   Coti.setPrecio(Integer.parseInt( properties.getProperty("precio")));
+                   Coti.setPrecio(properties.getProperty("precio")));
                 else
                 	Coti.setPrecio(-1);
+                
+                Conti.printCotizador();
+                
             }
                 
             else {

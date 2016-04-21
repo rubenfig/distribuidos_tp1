@@ -6,13 +6,21 @@ public class Satelite {
 	public double coord_y;
 	public int departamento;
 	public int distrito;
-		
+	
+	public void printSatelite()
+	{
+		System.out.println("\t\tSATELITE");
+		System.out.println("ID satelite: "+this.satelite_id);
+		System.out.println("Coord_x: "+this.coord_x);
+		System.out.println("Coord_y: "+this.coord_y);
+		System.out.println("Departamento: "+this.departamento);
+		System.out.println("Distrito: "+this.distrito);
+	}
+	
 		
 	public Satelite() {
 		
-		
-		
-}
+	}
 
 
 	public int getSatelite_id() {

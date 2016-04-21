@@ -9,6 +9,16 @@ public class Clima {
 	public int distrito;
 	public int zona;
 	
+	public void printClima()
+	{
+		System.out.println("\t\tCLIMA");
+		System.out.println("ID clima: "+this.clima_id);
+		System.out.println("Humedad: "+this.humedad);
+		System.out.println("Viento: "+this.viento);
+		System.out.println("Departamento: "+this.departamento);
+		System.out.println("Distrito: "+this.distrito);
+		System.out.println("Zona: "+this.zona);	
+	}
 	
 	public Clima() {
 		
@@ -75,9 +85,7 @@ public class Clima {
 	}
 
 	
-	public void printClima()
-	{
-		System.out.println("a");
-	}
+
+
 	
 }
