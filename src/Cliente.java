@@ -59,14 +59,14 @@ public class Cliente {
         	System.out.println("soja");
         	System.out.println("locote");
         	opcion= on.next();
-        	
+        }
         else {
         	System.out.println("ingrese ID");
         	opcion= on.next();
         }
         	
         
-        String fromUser="{\"data\":\""+entrada+"\";\"opcion\":\""+opcion+"\"}";
+        String fromUser="{\"data\":\""+entrada+"\",\"opcion\":\""+opcion+"\"}";
         
         
     
@@ -157,7 +157,7 @@ public class Cliente {
                 else
                     T.setTemperatura(-1);
                 
-                T.printTracto();
+                T.printTractor();
             }
             else if(entrada=="3" && fromServerjson != null)
             {
@@ -195,11 +195,11 @@ public class Cliente {
                 Properties properties = gson.fromJson(fromServerjson, Properties.class);
                 Cotizador Coti= new Cotizador();
                 if (properties.getProperty("precio")!=null)
-                   Coti.setPrecio(properties.getProperty("precio")));
+                   Coti.setprecio(Integer.parseInt(properties.getProperty("precio")));
                 else
-                	Coti.setPrecio(-1);
+                	Coti.setprecio(-1);
                 
-                Conti.printCotizador();
+                Coti.printCotizador();
                 
             }
                 

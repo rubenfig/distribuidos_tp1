@@ -18,7 +18,7 @@ public class Tractor {
 		System.out.println("Humedad: "+this.humedad);
 		System.out.println("Altura: "+this.altura);
 		System.out.println("Peso: "+this.peso);
-		System.out.println("Temperatura: "+this.temperatura
+		System.out.println("Temperatura: "+this.temperatura);
 	}
 	
 	

@@ -18,7 +18,7 @@ public class Cotizador {
 	
 	public void setprecio(int p)
 	{
-		this.setsoja(p);
+		this.setprecio(p);
 	}
 	
 	
@@ -26,7 +26,5 @@ public class Cotizador {
 	{
 		System.out.println("precio: "+this.precio);
 	}
-	
-	
 	
 }

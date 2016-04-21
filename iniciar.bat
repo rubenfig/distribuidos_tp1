@@ -8,4 +8,6 @@ START python Tractor.py
 
 python BADb.py
 
+START java src/Analizer
+
 PAUSE
