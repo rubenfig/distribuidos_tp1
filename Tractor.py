@@ -22,7 +22,7 @@ def enviarT(identificador):
 		hum = hum + random.random() - random.random()
 		pes = pes + random.random()
 		tem = tem + random.random() - random.random()
-		mensaje = json.dumps({"timestamp":tiempo, "id":id, "posX":coord_x, "posY":coord_y, "altura":alt, "humedad":hum, "peso":pes, "temperatura":tem})
+		mensaje = json.dumps({"tiempo":tiempo, "id":id, "posX":coord_x, "posY":coord_y, "altura":alt, "humedad":hum, "peso":pes, "temperatura":tem})
 
 
 		#Se envía por un socket UDP

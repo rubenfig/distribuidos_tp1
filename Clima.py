@@ -19,7 +19,7 @@ def enviarC(identificador):
 		hum = hum + random.random() - random.random()
 		tem = tem + random.random() - random.random()
 		vie = vie + random.random() - random.random()
-		mensaje = json.dumps({"timestamp":tiempo, "id":id, "humedad":hum, "viento":vie, "temperatura":tem, "departamento":dep, "distrito":dis, "zona":zon})
+		mensaje = json.dumps({"tiempo":tiempo, "id":id, "humedad":hum, "viento":vie, "temperatura":tem, "departamento":dep, "distrito":dis, "zona":zon})
 
 		#Se envía a traves de un socket UDP
 		UDP_IP = "localhost"

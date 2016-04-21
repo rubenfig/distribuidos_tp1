@@ -29,7 +29,7 @@ def recibir(i):
 			if i == 1:
 				log.write("Recibido de tractor "+str(parsed_json['id'])+"\n")
 				table = db['tractor']
-				table.insert(dict(tractor_id = parsed_json['id'], coord_x = parsed_json['posX'], coord_y = parsed_json ['posY'], altura = parsed_json ['altura'], humedad = parsed_json['humedad'], peso = parsed_json['peso'], temperatura = parsed_json['temperatura'] ))
+				table.insert(dict(tiempo = parsed_json['tiempo'],tractor_id = parsed_json['id'], coord_x = parsed_json['posX'], coord_y = parsed_json ['posY'], altura = parsed_json ['altura'], humedad = parsed_json['humedad'], peso = parsed_json['peso'], temperatura = parsed_json['temperatura'] ))
 				
 			if i == 2:
 				log.write("Recibido de satelite "+str(parsed_json['id'])+"\n")
@@ -39,7 +39,7 @@ def recibir(i):
 			if i == 3:
 				log.write("Recibido de sensor "+str(parsed_json['id'])+"\n")
 				table = db['sensor']
-				table.insert(dict(sensor_id = parsed_json['id'], zona = parsed_json['zona'], departamento = parsed_json['departamento'], distrito = parsed_json['distrito'], humedad = parsed_json['humedad'], viento = parsed_json['temperatura']))
+				table.insert(dict(tiempo = parsed_json['tiempo'],sensor_id = parsed_json['id'], zona = parsed_json['zona'], departamento = parsed_json['departamento'], distrito = parsed_json['distrito'], humedad = parsed_json['humedad'], viento = parsed_json['temperatura']))
 			log.close()
 			
 			
@@ -77,27 +77,44 @@ def analizer():
 	IP = "localhost"
 	s.bind((IP, 4444))
 	s.listen(1)
-
 	while True:
 		sc, addr = s.accept()
 		recibido = sc.recv(1024)
 		print str(addr[0]) + " dice: " + recibido #Se imprime la solicitud recibida
 		parsed_json= json.loads(recibido.decode('UTF-8'))
+		elegido=parsed_json['opcion']
 		if parsed_json['data'] == "1":
-				respuesta = "clima" #hay que hacer el query y convertir a json
-				sc.send(respuesta)
+			result = db.query("select * from sensor where id = (select MAX(id) from sensor where sensor_id = " + str(elegido) + ")")
+			for row in result:
+				respuesta = json.dumps({"tiempo": row['tiempo'], "id": row['sensor_id'], "humedad": row['humedad'],
+										"viento": row['viento'], "temperatura": row['temperatura'],
+									  "departamento": row['departamento'], "distrito": row['distrito'], "zona": row['zona']})
+			sc.send(respuesta)
 		if parsed_json['data'] == "2":
-				respuesta = "tractor" #hay que hacer el query y convertir a json
-				sc.send(respuesta)
+			result = db.query("select * from tractor where id = (select MAX(id) from tractor where tractor_id = " + str(elegido) + ")")
+			for row in result:
+				respuesta = json.dumps({"tiempo":row['tiempo'], "id": row['tractor_id'], "posX": row['coord_x'],
+										"posY": row['coord_y'], "altura": row['altura'], "humedad": row['humedad'],
+										"peso": row['peso'], "temperatura":row ['temperatura']})
+			sc.send(respuesta)
 		if parsed_json['data'] == "3":
-				respuesta = "satelite" #hay que hacer el query y convertir a json
-				sc.send(respuesta)
+			result = db.query("select * from satelite where id = (select MAX(id) from satelite where satelite_id = " + str(elegido) + ")")
+			for row in result:
+				respuesta = json.dumps({"id": row['satelite_id'], "posX": row['coord_x'], "posY": row['coord_y'],
+										"imagen": row['imagen'], "codigo_cultivo": row['cultivo_id'],
+										"departamento": row['departamento'], "distrito": row['distrito']})
+			sc.send(respuesta)
 		if parsed_json['data'] == "4":
-				respuesta = "cotizador" #hay que hacer el query y convertir a json
+				result = db.query("select precio from "+elegido+"  where id=(select MAX(id) from "+elegido+")")
+				for row in result:
+					respuesta = json.dumps({"precio": row ['precio']})
 				sc.send(respuesta)
-		print "se envio: "+ respuesta
+
 		sc.close()
 	s.close()
+
+t = threading.Thread(target=analizer)
+t.start()
 
 for i in range(4):
 	t = threading.Thread(target=recibir, args=(i,))
