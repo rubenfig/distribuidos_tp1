@@ -4,7 +4,7 @@ import json
 import psycopg2
 import time
 import dataset
-db = dataset.connect('sqlite:///BADB.db')
+#db = dataset.connect('sqlite:///BADB.db')
 db = dataset.connect('postgresql://postgres:postgres@localhost:5432/sockets')
 log = open ("log.txt","a")
 
@@ -58,6 +58,15 @@ def recibir(i):
 			s.send(mensaje)
 			data = s.recv(BUFFER_SIZE)
 			print "La cotizacion actual es: " + data
+			if mensaje == '1':
+				table1 = db['soja']
+				table1.insert(dict(precio = data))
+			elif mensaje == '2':
+				table2 = db['tomate']
+				table2.insert(dict(precio = data))
+			elif mensaje == '3':
+				table3 = db['locote']
+				table3.insert(dict(precio = data))
 			pregunta = raw_input("Seguir consultado cotizacion? responda con si o no: ")
 			log.write("Recibido de cotizador: "+ data + "\n")
 		s.close()
