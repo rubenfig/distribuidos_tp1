@@ -7,16 +7,23 @@ s.bind(("", 6969))
 s.listen(1)
 sc, addr = s.accept()
 
-#Se envía la cotización mientras pregunten
-precio = 1.28 
-precio = precio + random.random() - random.random() #Se hace un random para el precio de cotización
+precio = 1.28 #se establece un numero cualquiera para el calculo del random
+print "\t\t\t\tCotizador central:\n\n\n"
 
 while True:
 	#Precio base de cotización 
 	recibido = sc.recv(1024)
-	if recibido == "close": break
-	print str(addr[0]) + " dice: ", recibido.decode('utf-8') #Se imprime la solicitud recivida
-	sc.send(str(precio).encode('utf-8')) #Envíamos las cotizaciones del día
+	if recibido == "1":
+		recibido = "Soja"
+	elif recibido == "2":
+		recibido = "Tomate"
+	elif recibido == "3":
+		recibido = "Locote"
+	elif recibido == "no": break
+
+	print str("La direccion: " + addr[0]) + " consulto la cotizacion de: ", recibido #Se imprime la solicitud recivida
+	precio = precio + random.random() - random.random() #Se hace un random para el precio de cotización
+	sc.send(str(precio)) #Envíamos las cotizaciones del día
 
 #Cerramos las instancias de socket cliente y servidor
 sc.close()

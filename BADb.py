@@ -42,21 +42,22 @@ def recibir(i):
 			
 			
 	else:
-		time.sleep(10)
+		#time.sleep(2)
 		TCP_IP = '127.0.0.1'
 		TCP_PORT = 6969
 		BUFFER_SIZE = 1024
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((TCP_IP, TCP_PORT))
-		x=input("Ingrese un caracter si desea recibir cotizacion: ")
-		mensaje = "SOJA"
-		s.connect((TCP_IP, TCP_PORT))
-		s.send(mensaje.encode('utf-8'))
-		data = s.recv(BUFFER_SIZE)
-		time.sleep(1)
-		print ("received data:", data.decode('UTF-8'))
+		print "La lista de productos es: \n1-Soja\n2-Tomate\n3-Locote"
+		pregunta = raw_input("Desea consultar una cotizacion? responda con si o no: ")
+		while pregunta=='si':
+			mensaje= raw_input("Ingrese el numero del producto para consultar su cotizacion por Kg: ")
+			s.send(mensaje)
+			data = s.recv(BUFFER_SIZE)
+			print "La cotizacion actual es: " + data
+			pregunta = raw_input("Seguir consultado cotizacion? responda con si o no: ")
 		s.close()
 
 for i in range(4):
-    t = threading.Thread(target=recibir, args=(i,))
-    t.start()
+	t = threading.Thread(target=recibir, args=(i,))
+	t.start()
