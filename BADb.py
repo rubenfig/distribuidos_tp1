@@ -1,9 +1,11 @@
 ﻿import socket
 import threading
 import json
+import psycopg2
 import time
 import dataset
 db = dataset.connect('sqlite:///BADB.db')
+db = dataset.connect('postgresql://postgres:postgres@localhost:5432/sockets')
 log = open ("log.txt","a")
 
 def recibir(i):
@@ -43,6 +45,7 @@ def recibir(i):
 			
 	else:
 		#time.sleep(2)
+		log = open ("log.txt","a")
 		TCP_IP = '127.0.0.1'
 		TCP_PORT = 6969
 		BUFFER_SIZE = 1024
@@ -56,8 +59,12 @@ def recibir(i):
 			data = s.recv(BUFFER_SIZE)
 			print "La cotizacion actual es: " + data
 			pregunta = raw_input("Seguir consultado cotizacion? responda con si o no: ")
+			log.write("Recibido de cotizador: "+ data + "\n")
 		s.close()
+		log.close()
 
 for i in range(4):
 	t = threading.Thread(target=recibir, args=(i,))
 	t.start()
+
+#comando para usar en cotizador select imagen from satelite where id=(select MAX(id) from Satelite)
