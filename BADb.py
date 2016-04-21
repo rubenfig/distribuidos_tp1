@@ -72,6 +72,33 @@ def recibir(i):
 		s.close()
 		log.close()
 
+def analizer():
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #TCP
+	IP = "localhost"
+	s.bind((IP, 4444))
+	s.listen(1)
+
+	while True:
+		sc, addr = s.accept()
+		recibido = sc.recv(1024)
+		print str(addr[0]) + " dice: " + recibido #Se imprime la solicitud recibida
+		parsed_json= json.loads(recibido.decode('UTF-8'))
+		if parsed_json['data'] == "1":
+				respuesta = "clima" #hay que hacer el query y convertir a json
+				sc.send(respuesta)
+		if parsed_json['data'] == "2":
+				respuesta = "tractor" #hay que hacer el query y convertir a json
+				sc.send(respuesta)
+		if parsed_json['data'] == "3":
+				respuesta = "satelite" #hay que hacer el query y convertir a json
+				sc.send(respuesta)
+		if parsed_json['data'] == "4":
+				respuesta = "cotizador" #hay que hacer el query y convertir a json
+				sc.send(respuesta)
+		print "se envio: "+ respuesta
+		sc.close()
+	s.close()
+
 for i in range(4):
 	t = threading.Thread(target=recibir, args=(i,))
 	t.start()
