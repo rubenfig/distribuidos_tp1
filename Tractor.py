@@ -5,7 +5,7 @@ import time
 import random
 import threading
 
-def enviarT(identificador):
+def enviarT(identificador,UDP_IP,UDP_PORT):
 	#Se calculan las variables y se utiliza json para representar los datos
 	id = identificador
 	coord_x = -25.5
@@ -26,17 +26,18 @@ def enviarT(identificador):
 
 
 		#Se envía por un socket UDP
-		UDP_IP = "localhost"
-		UDP_PORT = 11337
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		s.sendto(mensaje.encode('utf-8'), (UDP_IP,UDP_PORT))
 		time.sleep(1)
 
 #Definimos la cantidad de hilos que se van a ejecutar para enviar los mensajes de manera concurrente
 def main():
+        print("Generador de Datos de Tractor")
+        UDP_IP = raw_input("Ingrese IP de Destino: ")
+        UDP_PORT = 11337
 	x = int(input("Ingrese la cantidad de tractores: "))
 	for i in range(x):
-		t = threading.Thread(target=enviarT, args=(i,))
+		t = threading.Thread(target=enviarT, args=(i,UDP_IP,UDP_PORT,))
 		t.start()
 
 main()	

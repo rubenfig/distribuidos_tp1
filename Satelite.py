@@ -7,10 +7,9 @@ import base64
 import threading
 
 #Se calculan las variables y se utiliza json para representar los datos
-def enviarS(identificador):
+def enviarS(identificador,UDP_IP,UDP_PORT):
 	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-	UDP_IP = "localhost"
-	UDP_PORT = 21337
+
 	id = identificador
 	coord_x = -25.5
 	coord_y = -16.5
@@ -19,7 +18,7 @@ def enviarS(identificador):
 	for j in range(5):
 		tiempo = time.time()
 		cod = int(random.random()*100)
-		encoded = str(base64.b64encode(open("filename.png", "rb").read()))
+		encoded = str(base64.b64encode(open("filename.jpg", "rb").read()))
 		mensaje = json.dumps({"id":id, "posX":coord_x, "posY":coord_y, "imagen":encoded, "codigo_cultivo":cod, "departamento":dep, "distrito":dis})
 		#Se envía por un socket UDP
 
@@ -27,9 +26,12 @@ def enviarS(identificador):
 		time.sleep(1)
 
 def main():
+        print("Generador de Datos de Satelite")
+        UDP_IP = raw_input("Ingrese IP de Destino: ")
+        UDP_PORT = 21337
 	x = int(input("Ingrese la cantidad de Satelites: "))
 	for i in range(x):
-		t = threading.Thread(target=enviarS, args=(i,))
+		t = threading.Thread(target=enviarS, args=(i,UDP_IP,UDP_PORT,))
 		t.start()
 
 main()

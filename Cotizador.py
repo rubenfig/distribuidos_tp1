@@ -1,7 +1,7 @@
 # coding=utf-8
 import socket
 import random
-
+print("Generador de Datos de Cotizacion")
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 s.bind(("", 6969))
 s.listen(1)
