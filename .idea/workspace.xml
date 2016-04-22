@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddbce5e5-6639-4984-8918-53eaf11576f4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prueba.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Analizer.class" afterPath="$PROJECT_DIR$/bin/Analizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Cliente.class" afterPath="$PROJECT_DIR$/bin/Cliente.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Clima.class" afterPath="$PROJECT_DIR$/bin/Clima.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Cotizador.class" afterPath="$PROJECT_DIR$/bin/Cotizador.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/distribuidos_tp1.iml" afterPath="$PROJECT_DIR$/.idea/distribuidos_tp1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BADb.py" afterPath="$PROJECT_DIR$/BADb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iniciar.bat" afterPath="$PROJECT_DIR$/iniciar.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Analizer.java" afterPath="$PROJECT_DIR$/src/Analizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cliente.java" afterPath="$PROJECT_DIR$/src/Cliente.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clima.java" afterPath="$PROJECT_DIR$/src/Clima.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cotizador.java" afterPath="$PROJECT_DIR$/src/Cotizador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tractor.java" afterPath="$PROJECT_DIR$/src/Tractor.java" />
     </list>
     <ignored path="distribuidos_tp1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,32 +43,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="prueba.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prueba.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BADb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BADb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48170012">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="482">
+              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-                <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-                <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-                <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-                <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-                <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-                <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-                <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-                <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+                <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+                <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+                <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+                <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+                <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+                <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
               </folding>
             </state>
           </provider>
@@ -69,7 +64,7 @@
       <file leaf-file-name="Cotizador.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cotizador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="153">
               <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
@@ -81,7 +76,7 @@
       <file leaf-file-name="Clima.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clima.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="215">
               <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
@@ -93,7 +88,7 @@
       <file leaf-file-name="Satelite.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Satelite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="300">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
@@ -105,7 +100,7 @@
       <file leaf-file-name="Tractor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tractor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="198">
               <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
@@ -117,7 +112,7 @@
       <file leaf-file-name="iniciar.bat" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iniciar.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="204">
               <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
@@ -149,21 +144,22 @@
         <option value="$PROJECT_DIR$/Tractor.py" />
         <option value="$PROJECT_DIR$/Clima.py" />
         <option value="$PROJECT_DIR$/prueba.py" />
-        <option value="$PROJECT_DIR$/BADb.py" />
         <option value="$PROJECT_DIR$/iniciar.bat" />
+        <option value="$PROJECT_DIR$/BADb.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1045" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -190,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,8 +222,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,6 +336,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -350,6 +347,7 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -474,7 +472,9 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -483,15 +483,16 @@
       <changelist id="ddbce5e5-6639-4984-8918-53eaf11576f4" name="Default" comment="" />
       <created>1461208665244</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1461208665244</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1045" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26956055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2693997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -532,7 +533,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -542,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -552,42 +553,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prueba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/prueba.py" />
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cotizador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -597,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -607,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -617,7 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -627,7 +618,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
@@ -635,26 +626,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cotizador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -664,7 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -674,7 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -684,7 +672,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -694,7 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
@@ -702,26 +690,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cotizador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -731,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -741,7 +726,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -751,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -761,7 +746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
@@ -769,26 +754,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cotizador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -798,7 +780,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -808,7 +790,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -818,7 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -828,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -836,26 +818,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -865,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cotizador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -875,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -883,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -893,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -903,26 +882,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -932,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cotizador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -942,7 +918,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/iniciar.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -950,7 +926,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -960,7 +936,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -968,69 +944,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cotizador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-          <folding>
-            <element signature="e#15#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prueba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/prueba.py" />
     <entry file="file://$PROJECT_DIR$/src/Clima.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Satelite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Analizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="e#15#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Satelite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="300">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -1038,9 +983,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/iniciar.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Clima.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="215">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -1048,29 +1001,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iniciar.bat">
+    <entry file="file://$PROJECT_DIR$/Tractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cotizador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48170012">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        <state relative-caret-position="482">
+          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1461278555888" expanded="true" signature="3203:3302" placeholder="select * fro... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3236:3281" placeholder="select MAX(i... sensor" />
-            <marker date="1461278555888" expanded="true" signature="3652:3754" placeholder="select * fro... tractor" />
-            <marker date="1461278555888" expanded="true" signature="3686:3733" placeholder="select MAX(i... tractor" />
-            <marker date="1461278555888" expanded="true" signature="4086:4191" placeholder="select * fro... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4121:4170" placeholder="select MAX(i... satelite" />
-            <marker date="1461278555888" expanded="true" signature="4545:4564" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4545:4637" placeholder="select preci... missing_value" />
-            <marker date="1461278555888" expanded="true" signature="4597:4617" placeholder="select MAX(i... missing_value" />
+            <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
+            <marker date="1461292609009" expanded="true" signature="3722:3767" placeholder="select MAX(i... sensor" />
+            <marker date="1461292609009" expanded="true" signature="4321:4423" placeholder="select * fro... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4355:4402" placeholder="select MAX(i... tractor" />
+            <marker date="1461292609009" expanded="true" signature="4932:5037" placeholder="select * fro... satelite" />
+            <marker date="1461292609009" expanded="true" signature="4967:5016" placeholder="select MAX(i... satelite" />
           </folding>
         </state>
       </provider>

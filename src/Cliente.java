@@ -12,6 +12,7 @@ public class Cliente {
     PrintWriter out = null;
     BufferedReader in = null;
     InputStream inImg=null;	
+    Scanner on=null;
     
     public Cliente()
     {
@@ -25,6 +26,7 @@ public class Cliente {
             out = new PrintWriter(unSocket.getOutputStream(), true);
             //viene del servidor
             in = new BufferedReader(new InputStreamReader(unSocket.getInputStream()));
+    		on = new Scanner(System.in);
            
             return 1;
         } catch (UnknownHostException e) {
@@ -38,7 +40,7 @@ public class Cliente {
 	
 	public int consultar () throws IOException
     {
-		Scanner on= new Scanner(System.in);
+		
     	
         String fromServerjson;
         System.out.println("Elija una opcion");
@@ -46,13 +48,9 @@ public class Cliente {
         System.out.println("2 Tractor");
         System.out.println("3 Satelite");
         System.out.println("4 Cotizador");
-        
-        
-        	
-        
         String entrada= on.next();
         String opcion;
-        if(entrada=="4")
+        if(entrada.equals("4"))
         {
         	System.out.println("elija una opcion");
         	System.out.println("tomate");
@@ -76,10 +74,9 @@ public class Cliente {
       try{
        
             fromServerjson = in.readLine();             
-            System.out.println(fromServerjson);
         
-            if(entrada=="1" && fromServerjson != null)
-            {
+            if(entrada.equals("1") && fromServerjson != null)
+            {	
                 Properties properties = gson.fromJson(fromServerjson, Properties.class);
                 Clima C= new Clima();
                 if (properties.getProperty("id")!=null)
@@ -88,27 +85,27 @@ public class Cliente {
                     C.setClima_id(-1);
                 
                 if (properties.getProperty("humedad")!=null)
-                    C.setHumedad(Integer.parseInt( properties.getProperty("humedad")));
+                    C.setHumedad(Double.parseDouble( properties.getProperty("humedad")));
                 else
                    C.setHumedad(-1);
                 	
                 if (properties.getProperty("viento")!=null)
-                    C.setViento(Integer.parseInt( properties.getProperty("viento")));
+                    C.setViento(Double.parseDouble( properties.getProperty("viento")));
                 else
                    C.setViento(-1);
                 
                 if (properties.getProperty("temperatura")!=null)
-                    C.setDepartamento(Integer.parseInt( properties.getProperty("temperatura")));
+                    C.setTemperatura(Double.parseDouble( properties.getProperty("temperatura")));
                 else
-                   C.setDepartamento(-1);
+                   C.setTemperatura(-1);
                 
                 if (properties.getProperty("distrito")!=null)
                     C.setDistrito(Integer.parseInt( properties.getProperty("distrito")));
                 else
                    C.setDistrito(-1);
               
-                if (properties.getProperty("departemento")!=null)
-                    C.setDepartamento(Integer.parseInt( properties.getProperty("departemento")));
+                if (properties.getProperty("departamento")!=null)
+                    C.setDepartamento(Integer.parseInt( properties.getProperty("departamento")));
                 else
                    C.setDepartamento(-1);
                             
@@ -118,7 +115,7 @@ public class Cliente {
                    C.setZona(-1);
                 C.printClima();
             }
-            else if(entrada=="2" && fromServerjson != null)
+            else if(entrada.equals("2") && fromServerjson != null)
             {
                 Properties properties = gson.fromJson(fromServerjson, Properties.class);
                 Tractor T= new Tractor();
@@ -128,38 +125,38 @@ public class Cliente {
                     T.setTractor_id(-1);
                 
                 if (properties.getProperty("posX")!=null)
-                    T.setCoord_x(Integer.parseInt( properties.getProperty("posX")));
+                    T.setCoord_x(Double.parseDouble( properties.getProperty("posX")));
                 else
                     T.setCoord_x(-1);
                 
                 if (properties.getProperty("posY")!=null)
-                    T.setCoord_y(Integer.parseInt( properties.getProperty("posY")));
+                    T.setCoord_y(Double.parseDouble( properties.getProperty("posY")));
                 else
                     T.setCoord_y(-1);
                 
                 if (properties.getProperty("altura")!=null)
-                    T.setAltura(Integer.parseInt( properties.getProperty("altura")));
+                    T.setAltura(Double.parseDouble( properties.getProperty("altura")));
                 else
                     T.setAltura(-1);
                 
                 if (properties.getProperty("humedad")!=null)
-                    T.setHumedad(Integer.parseInt( properties.getProperty("humedad")));
+                    T.setHumedad(Double.parseDouble( properties.getProperty("humedad")));
                 else
                     T.setHumedad(-1);
                 
                 if (properties.getProperty("peso")!=null)
-                    T.setPeso(Integer.parseInt( properties.getProperty("peso")));
+                    T.setPeso(Double.parseDouble( properties.getProperty("peso")));
                 else
                     T.setPeso(-1);
                 
                 if (properties.getProperty("temperatura")!=null)
-                    T.setTemperatura(Integer.parseInt( properties.getProperty("temperatura")));
+                    T.setTemperatura(Double.parseDouble( properties.getProperty("temperatura")));
                 else
                     T.setTemperatura(-1);
                 
                 T.printTractor();
             }
-            else if(entrada=="3" && fromServerjson != null)
+            else if(entrada.equals("3") && fromServerjson != null)
             {
                 Properties properties = gson.fromJson(fromServerjson, Properties.class);
                 Satelite S= new Satelite();
@@ -169,12 +166,12 @@ public class Cliente {
                     S.setSatelite_id(-1);
                 
                 if (properties.getProperty("posX")!=null)
-                    S.setCoord_x(Integer.parseInt( properties.getProperty("posX")));
+                    S.setCoord_x(Double.parseDouble( properties.getProperty("posX")));
                 else
                 	S.setCoord_x(-1);
                 
                 if (properties.getProperty("posY")!=null)
-                    S.setCoord_y(Integer.parseInt( properties.getProperty("posY")));
+                    S.setCoord_y(Double.parseDouble( properties.getProperty("posY")));
                 else
                     S.setCoord_y(-1);
                 
@@ -184,18 +181,18 @@ public class Cliente {
                    S.setDistrito(-1);
                 
                 if (properties.getProperty("departamento")!=null)
-                   S.setDepartamento(Integer.parseInt( properties.getProperty("departemento")));
+                   S.setDepartamento(Integer.parseInt( properties.getProperty("departamento")));
                 else
                    S.setDepartamento(-1);
                 S.printSatelite();
                 
             }
-            else if(entrada=="3" && fromServerjson != null)
+            else if(entrada.equals("4") && fromServerjson != null)
             {
                 Properties properties = gson.fromJson(fromServerjson, Properties.class);
                 Cotizador Coti= new Cotizador();
                 if (properties.getProperty("precio")!=null)
-                   Coti.setprecio(Integer.parseInt(properties.getProperty("precio")));
+                   Coti.setprecio(Double.parseDouble(properties.getProperty("precio")));
                 else
                 	Coti.setprecio(-1);
                 
@@ -213,20 +210,22 @@ public class Cliente {
         out.close();
         in.close();
         unSocket.close();
-        
       }catch (SocketTimeoutException ste) 
             {
             System.out.println("TimeOut: El paquete se asume perdido.");
             out.close();
             in.close();
-            unSocket.close(); 
+            unSocket.close();
             return -3;
             }
+      
+    
     return 1;
+    
     }
 	
 	
 	
-	
+    
 	
 }

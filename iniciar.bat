@@ -6,8 +6,8 @@ START python Satelite.py
 
 START python Tractor.py
 
-python BADb.py
+START python BADb.py
 
-START java src/Analizer
+java -jar Analizer.jar
 
 PAUSE

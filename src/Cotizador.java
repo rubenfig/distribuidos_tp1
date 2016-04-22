@@ -2,7 +2,7 @@
 public class Cotizador {
 
 
-	public int precio;
+	public double precio;
 
 	
 	public Cotizador()
@@ -11,20 +11,21 @@ public class Cotizador {
 	}
 	
 	
-	public int getprecio()
+	public double getprecio()
 	{
 		return this.precio;
 	}
 	
-	public void setprecio(int p)
+	public void setprecio(double p)
 	{
-		this.setprecio(p);
+		this.precio=p;
 	}
 	
 	
 	public void printCotizador()
 	{
-		System.out.println("precio: "+this.precio);
+		System.out.println("\t\tCOTIZADOR");
+		System.out.println("Precio: "+this.precio);
 	}
 	
 }

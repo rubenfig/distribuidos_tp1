@@ -1,4 +1,3 @@
-import javax.swing.plaf.synth.SynthSeparatorUI;
 
 public class Clima {
 	
@@ -8,11 +7,13 @@ public class Clima {
 	public int departamento;
 	public int distrito;
 	public int zona;
+	public double temperatura;
 	
 	public void printClima()
 	{
 		System.out.println("\t\tCLIMA");
 		System.out.println("ID clima: "+this.clima_id);
+		System.out.println("Temperatura: "+this.temperatura);
 		System.out.println("Humedad: "+this.humedad);
 		System.out.println("Viento: "+this.viento);
 		System.out.println("Departamento: "+this.departamento);
@@ -32,6 +33,14 @@ public class Clima {
 
 	public void setClima_id(int clima_id) {
 		this.clima_id = clima_id;
+	}
+	
+	public void setTemperatura(double temperatura){
+		this.temperatura = temperatura;
+	}
+	
+	public double getTemperatura(){
+		return this.temperatura;
 	}
 
 
