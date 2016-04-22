@@ -18,7 +18,7 @@ def enviarS(identificador,UDP_IP,UDP_PORT):
 	for j in range(5):
 		tiempo = time.time()
 		cod = int(random.random()*100)
-		encoded = str(base64.b64encode(open("filename.jpg", "rb").read()))
+		encoded = str(base64.b64encode(open("filename.png", "rb").read()))
 		mensaje = json.dumps({"id":id, "posX":coord_x, "posY":coord_y, "imagen":encoded, "codigo_cultivo":cod, "departamento":dep, "distrito":dis})
 		#Se envía por un socket UDP
 
