@@ -1,8 +1,19 @@
 import com.google.gson.Gson;
+
+import java.awt.BorderLayout;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.*;
+import java.util.Base64;
 import java.util.Properties;
 import java.util.Scanner;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 
 
 public class Cliente {
@@ -185,6 +196,42 @@ public class Cliente {
                 else
                    S.setDepartamento(-1);
                 S.printSatelite();
+                if (properties.getProperty("imagen")!=null){
+                	byte[] decoded= Base64.getDecoder().decode(properties.getProperty("imagen"));
+                	FileOutputStream imageOutFile = new FileOutputStream(
+        					"salida.png");
+
+        			imageOutFile.write(decoded);
+
+        			imageOutFile.close();
+        			SwingUtilities.invokeLater(new Runnable()
+        		    {
+        		      public void run()
+        		      {
+        		        JFrame editorFrame = new JFrame("Image Demo");
+        		        editorFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        		        
+        		        BufferedImage image = null;
+        		        try
+        		        {
+        		          image = ImageIO.read(new File("salida.png"));
+        		        }
+        		        catch (Exception e)
+        		        {
+        		          e.printStackTrace();
+        		          System.exit(1);
+        		        }
+        		        ImageIcon imageIcon = new ImageIcon(image);
+        		        JLabel jLabel = new JLabel();
+        		        jLabel.setIcon(imageIcon);
+        		        editorFrame.getContentPane().add(jLabel, BorderLayout.CENTER);
+
+        		        editorFrame.pack();
+        		        editorFrame.setLocationRelativeTo(null);
+        		        editorFrame.setVisible(true);
+        		      }
+        		    });
+                }
                 
             }
             else if(entrada.equals("4") && fromServerjson != null)

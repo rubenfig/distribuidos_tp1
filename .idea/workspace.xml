@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddbce5e5-6639-4984-8918-53eaf11576f4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/prueba.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Analizer.class" afterPath="$PROJECT_DIR$/bin/Analizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Cliente.class" afterPath="$PROJECT_DIR$/bin/Cliente.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Clima.class" afterPath="$PROJECT_DIR$/bin/Clima.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Cotizador.class" afterPath="$PROJECT_DIR$/bin/Cotizador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/distribuidos_tp1.iml" afterPath="$PROJECT_DIR$/.idea/distribuidos_tp1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BADb.py" afterPath="$PROJECT_DIR$/BADb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iniciar.bat" afterPath="$PROJECT_DIR$/iniciar.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Analizer.java" afterPath="$PROJECT_DIR$/src/Analizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cliente.java" afterPath="$PROJECT_DIR$/src/Cliente.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Clima.java" afterPath="$PROJECT_DIR$/src/Clima.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cotizador.java" afterPath="$PROJECT_DIR$/src/Cotizador.java" />
     </list>
     <ignored path="distribuidos_tp1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +34,8 @@
       <file leaf-file-name="BADb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BADb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+            <state relative-caret-position="-326">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
@@ -489,7 +477,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2693997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1023,8 +1011,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BADb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+        <state relative-caret-position="-326">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1461292609009" expanded="true" signature="3689:3788" placeholder="select * fro... sensor" />
